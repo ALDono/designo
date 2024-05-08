@@ -8,8 +8,163 @@
    --sec-clr-dark: #333136;
    --sec-clr-light: #f1f3f5;
 
+   /* custom font color */
    --ff-family: "Jost",sans-serif;
 
+   /* Custom Fonts */
+   --fs-heading: 3rem;
+   --fs-sub-heading: 2.5rem;
+   --fs-title: 1.25rem;
+   --fs-para: 1rem;
+}
+
+/* CSS Reset - Used Andy Bells */
+/* Box sizing rules */
+*,
+*::before,
+*::after {
+box-sizing: border-box;
+}
+
+/* Remove default margin */
+body,
+h1,
+h2,
+h3,
+h4,
+p,
+figure,
+blockquote,
+dl,
+dd {
+margin-block-end: 0;
+margin: 0;
+}
+
+/* Remove list styles on ul, ol elements with a list role, which suggests default styling will be removed */
+ul[role='list'],
+ol[role='list'] {
+list-style: none;
+}
+
+/* Set core root defaults */
+html:focus-within {
+scroll-behavior: smooth;
+}
+
+/* Set core body defaults */
+body {
+min-height: 100vh;
+text-rendering: optimizeSpeed;
+line-height: 1.5;
+margin: 0;
+}
+
+/* A elements that don't have a class get default styles */
+a:not([class]) {
+text-decoration-skip-ink: auto;
+}
+
+/* Make images easier to work with */
+img,
+picture {
+max-width: 100%;
+display: block;
+}
+
+/* Inherit fonts for inputs and buttons */
+input,
+button,
+textarea,
+select {
+font: inherit;
+}
+
+/* Remove all animations, transitions and smooth scroll for people that prefer not to see them */
+@media (prefers-reduced-motion: reduce) {
+html:focus-within {
+  scroll-behavior: auto;
+}
+
+*,
+*::before,
+*::after {
+  animation-duration: 0.01ms !important;
+  animation-iteration-count: 1 !important;
+  transition-duration: 0.01ms !important;
+  scroll-behavior: auto !important;
+}
+}
+
+a{
+  text-decoration: none;
+  color: var(--clr-main-20);
+}
+
+/* End of CSS Reset */
+
+
+/* utility classes */
+
+body{
+   font-family: var(--ff-family);
+}
+
+.bg-prim-10{
+   background-color: var(--primary-clr-10);
+}
+
+.bg-prim-dark{
+   background-color: var(--primary-clr-dark);
+}
+
+.fs-heading{
+   font-size: var(--fs-heading);
+   font-weight: 500;
+}
+
+.fs-sub-heading{
+   font-size: var(--fs-sub-heading);
+}
+
+.fs-para{
+   font-size: var(--fs-para);
+}
+
+.fc-white{
+   color: var(--primary-clr-light);
+}
+
+.btn{
+   text-transform: uppercase;
+   border: none;
+   border-radius: 8px;
+   background-color: var(--primary-clr-light);
+   font-size: var(--fs-para);
+   padding: 0.8rem 1.5rem;
+   font-weight: 500;
+   letter-spacing: 1px;
 
 }
+
+/* general styling */
+
+/* project link section */
+
+.web-design-link{
+   background-image: url("assets/home/mobile/image-web-design.jpg");
+}
+
+.app-design-link{
+   background-image: url("assets/home/mobile/image-app-design.jpg");
+}
+
+.graph-design-link{
+   background-image: url("assets/home/mobile/image-graphic-design.jpg");
+}
+
+
+
+
+
 
